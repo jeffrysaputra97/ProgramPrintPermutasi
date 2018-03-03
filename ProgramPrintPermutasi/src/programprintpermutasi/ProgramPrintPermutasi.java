@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author jeffr
+ * @author jeffry
  */
 public class ProgramPrintPermutasi {
 
