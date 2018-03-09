@@ -36,11 +36,11 @@ public class ProgramPrintPermutasi {
         data.set(index1, temp);
     }
 
-    private static void printPermutasi(ArrayList<Integer> data, int callerIndex) {
+    private static void permutasi(ArrayList<Integer> data, int callerIndex) {
         for (int i = callerIndex; i < data.size(); i++) {
             if (callerIndex != data.size() - 1) {
                 switchContent(data, callerIndex, i);                
-                printPermutasi(data, callerIndex + 1);
+                permutasi(data, callerIndex + 1);
                 switchContent(data, callerIndex, i);
 
             } else {
@@ -67,7 +67,7 @@ public class ProgramPrintPermutasi {
         ArrayList<Integer> listOfNumber = inisialisasi(n);
 
         System.out.println("\nHasil Permutasi: ");
-        printPermutasi(listOfNumber, 0);
+        permutasi(listOfNumber, 0);
     }
 
 }
